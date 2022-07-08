@@ -1,0 +1,157 @@
+body {
+  background-image: url(https://mota.ru/upload/wallpapers/source/2016/09/11/01/01/49689/mota.ru_2016091129.jpg);
+  background-attachment: fixed;
+}
+
+span {
+  color: aliceblue;
+}
+
+.main {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  transition: top 1.5s ease-in-out;
+}
+
+.firstPage {
+  display: flex;
+  transition: 3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.heading {
+  font-family: 'Consolas';
+  transition: 3s;
+  opacity: 0;
+  height: 70px;
+  align-self: center;
+  position: absolute;
+}
+
+.heading.first {
+  font-size: 70px;
+  letter-spacing: 30px;
+  margin-bottom: 80px;
+}
+
+.heading.second {
+  margin-top: 80px;
+}
+
+.downButt {
+  height: 30px;
+  width: 30px;
+  align-self: flex-end;
+  margin-bottom: 15px;
+}
+
+.arr {
+  height: 40px;
+  width: 50px;
+  animation: arrow infinite 2s;
+  cursor: pointer;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.secondPage {
+  transition: 3s;
+  background: rgb(49, 49, 49);
+  display: flex;
+  transition: 3s;
+  position: absolute;
+  justify-content: center;
+  top: 100vh;
+  left: 0;
+  height: 25vh;
+  width: 100%;
+}
+
+hr {
+  background-color: white;
+  position: absolute;
+  height: 2px;
+  width: 25%;
+  border-radius: 3px;
+  right: 25%;
+  left: 25%;
+}
+
+.firstln {
+  align-self: flex-start;
+}
+
+.secondln {
+  align-self: flex-end;
+}
+
+.maininscsp {
+  position: absolute;
+  align-self: center;
+  top: 15%;
+  font-size: 20px;
+  letter-spacing: 20px;
+  font-family: 'Consolas';
+}
+
+.secinscsp {
+  position: absolute;
+  align-self: center;
+  top: 30%;
+  font-size: 20px;
+  font-family: 'Consolas';
+  width: 1500px;
+  line-height: 30px;
+  text-align: center;
+  color: rgb(184, 184, 184);
+}
+
+.thirdPage {
+  transition: 3s;
+  display: block;
+  transition: 3s;
+  position: absolute;
+  justify-content: center;
+  top: 125vh;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+/* .examples {
+  height: 92%;
+  width: 96%;
+  padding: 2%;
+}
+
+.example {
+  position: relative;
+  height: 20%;
+  width: 17%;
+  background: rgb(49, 49, 49);
+}
+
+.firstEx {
+} */
+
+::-webkit-scrollbar {
+  width: 0;
+}
